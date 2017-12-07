@@ -294,7 +294,7 @@
     background-color: #102990;
     border: 2px solid #102990;
     border-radius: 7px;
-    font-size: 20px;
+    font-size: 16px;
     margin: 0.5em 0;
     padding: 0.7rem 2rem;
     -webkit-transition: all 0.4s ease-in-out;
@@ -303,6 +303,7 @@
 }@media (min-width: 425px) {
 	.button-primary {
 		width: 300px;
+		font-size: 20px;
 	}
 }.button-primary.light {
 	color: #102990;
@@ -341,7 +342,7 @@
     background-color: transparent;
     border: 2px solid #102990;
     border-radius: 7px;
-    font-size: 20px;
+    font-size: 16px;
     margin: 0.5em 0;
     padding: 0.7rem 2rem;
     -webkit-transition: all 0.4s ease-in-out;
@@ -349,6 +350,7 @@
     width: 250px;
 }@media (min-width: 425px) {
 	.button-secondary {
+		font-size: 20px;
 		width: 300px;
 	}
 }.button-secondary.dark-light {
@@ -396,9 +398,15 @@
 		font-size: 18px;
 		width: auto;
 	}
+}.call-now-button {
+	padding: 0.7rem 0.45rem;
 }@media (min-width: 768px) {
 	.ccos-button {
 		width: 300px;
+	}
+
+	.call-now-button {
+		padding: 0.7rem 2rem;
 	}
 }.navbar .button-secondary {
 	font-size: 1em;
