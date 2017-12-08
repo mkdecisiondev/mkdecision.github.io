@@ -1,74 +1,3 @@
-.image-header {
-	background: url(../img/logo-pattern-background.svg);
-	background-repeat: repeat;
-	background-size: 100px 120px;
-}
-
-.image-header-mobile-overlay {
-	background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(white)) no-repeat;
-	background: linear-gradient(transparent, white) no-repeat;
-	width: 100%;
-	height: 100%;
-}
-
-.image-header {
-	text-align: center;
-	padding: 6em 0 0 0;
-}
-
-@media (min-width: 768px) {
-	.image-header {
-		background: white;
-		padding: 8em 0 5em 0;
-	}
-
-	.image-header-mobile-overlay {
-		background: transparent;
-	}
-
-	.image-header .container {
-		text-align: left;
-		padding: 0;
-	}
-}
-
-.turnkey-section {
-	background: #F4F4F4;
-	padding: 3em 0;
-}
-
-.turnkey-section h2 {
-	font-size: 24px;
-	font-weight: 600;
-	margin: 0.5em 0;
-}
-
-.ccos-icon {
-	background: #4057A9;
-	border-top-left-radius: 5px;
-	border-bottom-left-radius: 5px;
-	position: relative;
-}
-
-.ccos-icon img {
-	max-height: 100%;
-	max-width: 100%;
-	width: auto;
-	height: auto;
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	margin: auto;
-}
-
-.ccos-img {
-	width: 100%;
-	border-top-right-radius: 5px;
-	border-bottom-right-radius: 5px;
-}
-
 .ccos-diagram {
 	color: white;
 	background: #0C2072;
@@ -171,4 +100,89 @@
 	-webkit-animation: fadeOutLeft 1s;
 	        animation: fadeOutLeft 1s;
 	left: -200px;
+}
+
+.image-header-mobile-overlay {
+	background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(white)) no-repeat;
+	background: linear-gradient(transparent, white) no-repeat;
+	width: 100%;
+	height: 100%;
+}
+
+.image-header {
+	text-align: center;
+	padding: 2em 0;
+}
+
+@media (min-width: 768px) {
+	.image-header-mobile-overlay {
+		background: transparent;
+	}
+
+	.image-header {
+		background: white;
+		text-align: left;
+	}
+}
+
+.image-header .col-lg-8 {
+	padding: 0;
+}
+
+.image-header .col-lg-4 {
+	padding: 0;
+}
+
+.turnkey-section {
+	background: #F4F4F4;
+	text-align: center;
+	padding: 3em 0;
+}
+
+.turnkey-column {
+	padding: 1em;
+}
+
+.turnkey-column div {
+	padding: 0;
+}
+
+.turnkey-icon-box {
+	background: #4057A9;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	position: relative;
+}
+
+.turnkey-icon {
+	max-height: 100%;
+	max-width: 100%;
+	width: auto;
+	height: auto;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+
+.turnkey-image {
+	width: 100%;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+.turnkey-column h2 {
+	font-size: 24px;
+	margin: 0.5em 0;
+}
+
+.turnkey-column p {
+	text-align: left;
+}
+
+.turnkey-buttons {
+	margin-top: auto;
+	margin-bottom: auto;
 }

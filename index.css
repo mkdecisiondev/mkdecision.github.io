@@ -1,7 +1,4 @@
 .image-header {
-	background: url(../img/logo-pattern-background.svg);
-	background-repeat: repeat;
-	background-size: 100px 120px;
 	color: #4057A9;
 }
 
@@ -14,7 +11,7 @@
 
 .image-header .container {
 	text-align: center;
-	padding: 6em 0 0 0;
+	padding: 1em 0;
 }
 
 .image-header img {
@@ -27,7 +24,7 @@
 }
 
 h1 {
-	font-size: 1.8em;
+	font-size: 1.7em;
 }
 
 .image-header h2 {
@@ -42,7 +39,7 @@ h1 {
 		background-position: center center;
 		height: 100%;
 		color: white;
-		padding: 6em 0;
+		padding-bottom: 5em;
 	}
 
 	.image-header-mobile-overlay {
@@ -51,7 +48,6 @@ h1 {
 
 	.image-header .container {
 		text-align: left;
-		padding: 0;
 	}
 
 	.image-header ul {
@@ -79,9 +75,6 @@ h1 {
 
 .our-partners {
 	padding: 2em 0;
-}
-
-.our-partners h1 {
 	text-align: center;
 }
 
@@ -92,11 +85,6 @@ h1 {
 	        filter: grayscale(100%);
 }
 
-.our-partners img:hover {
-	-webkit-filter: grayscale(0%);
-	        filter: grayscale(0%);
-}
-
 @media (min-width: 768px) {
 	.our-partners img {
 		width: 160px;
@@ -104,9 +92,15 @@ h1 {
 	}
 }
 
+.our-partners img:hover {
+	-webkit-filter: grayscale(0%);
+	        filter: grayscale(0%);
+}
+
 .solutions-section {
-	color: #fff;
+	color: white;
 	background: #99A5D0;
+	text-align: center;
 	padding: 2em 0;
 }
 
@@ -118,7 +112,7 @@ h1 {
 	background: white;
 	color: #4057A9;
 	padding: 0;
-	border: 1px solid #eee;
+	border: 1px solid #F4F4F4;
 }
 
 .solutions-icons div {
@@ -184,9 +178,7 @@ h1 {
 }
 
 .industries-section {
-	background: url(../img/logo-pattern-background.svg);
-	background-repeat: repeat;
-	background-size: 100px 120px;
+	text-align: center;
 	padding: 2em 0;
 }
 
@@ -206,11 +198,12 @@ h1 {
 
 .industries-column {
 	background: white;
-	height: 100%;
 	border-radius: 5px;
 	border: 1px solid #7686C0;
 	-webkit-box-shadow: 0 0 15px -1px #4057A9;
 	        box-shadow: 0 0 15px -1px #4057A9;
+	height: 100%;
+	text-align: left;
 	padding: 1em;
 }
 
