@@ -174,15 +174,32 @@
 	}
 
 	.diagonal-left-arrow {
+		width: 100px;
 		position: absolute;
 		top: 75%;
 		left: -30%;
+		-webkit-transform: rotate(-10deg);
+		        transform: rotate(-10deg);
 	}
 
 	.diagonal-right-arrow {
+		width: 100px;
 		position: absolute;
 		top: 135%;
 		left: -35%;
+		-webkit-transform: rotate(10deg);
+		        transform: rotate(10deg);
+	}
+
+	@media(min-width: 375px) {
+		.diagonal-left-arrow {
+			width: 120px;
+			top: 70%;
+		}
+		.diagonal-right-arrow {
+			width: 120px;
+			top: 100%;
+		}
 	}
 
 	@media (min-width: 425px) {
