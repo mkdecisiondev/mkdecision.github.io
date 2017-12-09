@@ -3,6 +3,17 @@
 	background: #0C2072;
 	font-size: 0.8em;
 	padding: 1.5em 0;
+	display: none;
+}
+
+@media (min-width: 426px) {
+	.ccos-diagram {
+		display: block;
+	}
+
+	.ccos-diagram-mobile {
+		display: none;
+	}
 }
 
 @media (min-width: 768px) {
@@ -100,6 +111,188 @@
 	-webkit-animation: fadeOutLeft 1s;
 	        animation: fadeOutLeft 1s;
 	left: -200px;
+}
+
+@media(max-width: 425px) {
+	.ccos-diagram-mobile {
+		background: #0C2072;
+		color: #fff;
+		text-align: center;
+		padding: 0;
+	}
+
+	.ccos-diagram-mobile h1 {
+		font-size: 1.4em;
+		padding: 1em 0 0 0;
+	}
+
+	.ccos-diagram-mobile h2 {
+		font-weight: 600;
+		color: #DBB512;
+		font-size: 1.2em;
+		margin: 0;
+	}
+
+	.ccos-diagram-mobile .row {
+		height: 260px;
+	}
+
+	.ccos-diagram-mobile .row div {
+		padding: 1em;
+	}
+
+	.diagram-step {
+		cursor: pointer;
+		height: 260px;
+		padding: 0;
+	}
+
+	.diagram-step-icon {
+		width: 130px;
+		height: 130px;
+	}
+
+	.swipe-arrow {
+		width: 20px;
+	}
+
+	.swipe-arrow.reverse {
+		-webkit-transform: rotate(180deg);
+		        transform: rotate(180deg);
+	}
+
+	.small-solid-arrow {
+		width: 50px;
+	}
+
+	.large-solid-arrow {
+		width: 35px;
+		position: absolute;
+		bottom: -110%;
+		left: 39%;
+		pointer-events: none;
+	}
+
+	.diagonal-left-arrow {
+		position: absolute;
+		top: 75%;
+		left: -30%;
+	}
+
+	.diagonal-right-arrow {
+		position: absolute;
+		top: 135%;
+		left: -35%;
+	}
+
+	@media (min-width: 425px) {
+		.diagonal-left-arrow {
+			top: 65%;
+		}
+
+		.diagonal-right-arrow {
+			top: 110%;
+		}
+	}
+
+	.diagram-step-info {
+		background: #102990;
+		text-align: left;
+	}
+
+	.diagram-step-info.left {
+		left: -600px;
+		position: absolute;
+		-webkit-box-shadow: 0 0 2px 2px rgba(0, 0, 0, .15);
+		        box-shadow: 0 0 2px 2px rgba(0, 0, 0, .15);
+		z-index: 30;
+	}
+
+	.diagram-step-info.right {
+		left: 600px;
+		position: absolute;
+		-webkit-box-shadow: 0 0 2px 2px rgba(0, 0, 0, .15);
+		        box-shadow: 0 0 2px 2px rgba(0, 0, 0, .15);
+		z-index: 30;
+	}
+
+	@-webkit-keyframes fadeInRight {
+		0% {
+			left: 600px;
+		}
+		100% {
+			left: 0;
+		}
+	}
+
+	@keyframes fadeInRight {
+		0% {
+			left: 600px;
+		}
+		100% {
+			left: 0;
+		}
+	}
+
+	@-webkit-keyframes fadeOutRight {
+		0% {
+			left: 0;
+		}
+		100% {
+			left: 600px;
+		}
+	}
+
+	@keyframes fadeOutRight {
+		0% {
+			left: 0;
+		}
+		100% {
+			left: 600px;
+		}
+	}
+
+	.fade-in-right.right {
+		-webkit-animation: fadeInRight 1s;
+		        animation: fadeInRight 1s;
+		left: 0;
+	}
+
+	.fade-out-right.right {
+		-webkit-animation: fadeOutRight 1s;
+		        animation: fadeOutRight 1s;
+		left: 600px;
+	}
+
+	@-webkit-keyframes fadeOutLeft {
+		0% {
+			left: 0px;
+		}
+		100% {
+			left: -600px;
+		}
+	}
+
+	@keyframes fadeOutLeft {
+		0% {
+			left: 0px;
+		}
+		100% {
+			left: -600px;
+		}
+	}
+
+	.fade-in-left.left {
+		-webkit-animation: fadeInLeft 1s;
+		        animation: fadeInLeft 1s;
+		left: 0;
+	}
+
+	.fade-out-left.left {
+		-webkit-animation: fadeOutLeft 1s;
+		        animation: fadeOutLeft 1s;
+		left: -600px;
+	}
 }
 
 .image-header-mobile-overlay {

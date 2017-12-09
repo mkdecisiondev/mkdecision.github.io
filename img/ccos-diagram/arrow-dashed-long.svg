@@ -7,8 +7,8 @@
 	.st1{fill:none;stroke:#DBB512;stroke-width:2;stroke-linecap:round;stroke-miterlimit:10;stroke-dasharray:3,5;}
 </style>
 <g>
-	<line id="XMLID_25_" class="st0" x1="-266.6" y1="278" x2="-266.6" y2="516.7"/>
-	<line id="XMLID_39_" class="st1" x1="-266.6" y1="516.7" x2="-256" y2="506.1"/>
-	<line id="XMLID_103_" class="st1" x1="-266.6" y1="516.7" x2="-277.3" y2="506.1"/>
+	<line id="XMLID_25_" class="st0" x1="-263" y1="272" x2="-263" y2="510.7"/>
+	<line id="XMLID_39_" class="st1" x1="-263" y1="510.7" x2="-252.4" y2="500.1"/>
+	<line id="XMLID_103_" class="st1" x1="-263" y1="510.7" x2="-273.6" y2="500.1"/>
 </g>
 </svg>
