@@ -6,7 +6,7 @@
 	display: none;
 }
 
-@media (min-width: 426px) and (min-height: 568px) {
+@media (min-width: 426px) and (min-height: 569px) {
 	.ccos-diagram {
 		display: block;
 	}
@@ -182,58 +182,59 @@
 	left: -200px;
 }
 
-.ccos-diagram-mobile {
+@media (max-width: 425px), (max-height: 568px) {
+	.ccos-diagram-mobile {
 		background: #0C2072;
 		color: #fff;
 		text-align: center;
 		padding: 0;
 	}
 
-.ccos-diagram-mobile h1 {
+	.ccos-diagram-mobile h1 {
 		font-size: 1.4em;
 		padding: 1em 0 0 0;
 	}
 
-.ccos-diagram-mobile h2 {
+	.ccos-diagram-mobile h2 {
 		font-weight: 600;
 		color: #DBB512;
 		font-size: 1.2em;
 		margin: 0;
 	}
 
-.ccos-diagram-mobile .row {
+	.ccos-diagram-mobile .row {
 		height: 260px;
 	}
 
-.ccos-diagram-mobile .row div {
+	.ccos-diagram-mobile .row div {
 		padding: 1em;
 	}
 
-.diagram-step {
+	.diagram-step {
 		cursor: pointer;
 		height: 260px;
 		padding: 0;
 	}
 
-.diagram-step-icon {
+	.diagram-step-icon {
 		width: 130px;
 		height: 130px;
 	}
 
-.swipe-arrow {
+	.swipe-arrow {
 		width: 20px;
 	}
 
-.swipe-arrow.reverse {
+	.swipe-arrow.reverse {
 		-webkit-transform: rotate(180deg);
 		        transform: rotate(180deg);
 	}
 
-.small-solid-arrow {
+	.small-solid-arrow {
 		width: 50px;
 	}
 
-.large-solid-arrow {
+	.large-solid-arrow {
 		width: 35px;
 		position: absolute;
 		bottom: -110%;
@@ -241,7 +242,7 @@
 		pointer-events: none;
 	}
 
-.diagonal-left-arrow {
+	.diagonal-left-arrow {
 		width: 100px;
 		position: absolute;
 		top: 70%;
@@ -250,7 +251,7 @@
 		        transform: rotate(-10deg);
 	}
 
-.diagonal-right-arrow {
+	.diagonal-right-arrow {
 		width: 100px;
 		position: absolute;
 		top: 135%;
@@ -259,7 +260,7 @@
 		        transform: rotate(10deg);
 	}
 
-@media(min-width: 375px) {
+	@media (min-width: 375px) {
 		.diagonal-left-arrow {
 			width: 120px;
 			top: 65%;
@@ -270,26 +271,27 @@
 		}
 	}
 
-@media (min-width: 425px) {
+	@media (min-width: 425px) {
 		.diagonal-right-arrow {
 			top: 110%;
 		}
 	}
 
-.diagram-step-info {
+	.diagram-step-info {
 		background: #102990;
 		text-align: left;
+		max-width:;
 	}
 
-.diagram-step-info.left {
-		left: -600px;
+	.diagram-step-info.left {
+		left: -1200px;
 		position: absolute;
 		-webkit-box-shadow: 0 0 2px 2px rgba(0, 0, 0, .15);
 		        box-shadow: 0 0 2px 2px rgba(0, 0, 0, .15);
 		z-index: 1;
 	}
 
-.diagram-step-info.right {
+	.diagram-step-info.right {
 		left: 600px;
 		position: absolute;
 		-webkit-box-shadow: 0 0 2px 2px rgba(0, 0, 0, .15);
@@ -297,7 +299,7 @@
 		z-index: 1;
 	}
 
-@-webkit-keyframes fadeInRight {
+	@-webkit-keyframes fadeInRight {
 		0% {
 			left: 600px;
 		}
@@ -306,7 +308,7 @@
 		}
 	}
 
-@keyframes fadeInRight {
+	@keyframes fadeInRight {
 		0% {
 			left: 600px;
 		}
@@ -315,7 +317,7 @@
 		}
 	}
 
-@-webkit-keyframes fadeOutRight {
+	@-webkit-keyframes fadeOutRight {
 		0% {
 			left: 0;
 		}
@@ -324,7 +326,7 @@
 		}
 	}
 
-@keyframes fadeOutRight {
+	@keyframes fadeOutRight {
 		0% {
 			left: 0;
 		}
@@ -333,47 +335,66 @@
 		}
 	}
 
-.fade-in-right.right {
+	.fade-in-right.right {
 		-webkit-animation: fadeInRight 1s;
 		        animation: fadeInRight 1s;
 		left: 0;
 	}
 
-.fade-out-right.right {
+	.fade-out-right.right {
 		-webkit-animation: fadeOutRight 1s;
 		        animation: fadeOutRight 1s;
 		left: 600px;
 	}
 
-@-webkit-keyframes fadeOutLeft {
+	@-webkit-keyframes fadeInLeft {
+		0% {
+			left: -1200px;
+		}
+		100% {
+			left: 0;
+		}
+	}
+
+	@keyframes fadeInLeft {
+		0% {
+			left: -1200px;
+		}
+		100% {
+			left: 0;
+		}
+	}
+
+	@-webkit-keyframes fadeOutLeft {
 		0% {
 			left: 0px;
 		}
 		100% {
-			left: -600px;
+			left: -1200px;
 		}
 	}
 
-@keyframes fadeOutLeft {
+	@keyframes fadeOutLeft {
 		0% {
 			left: 0px;
 		}
 		100% {
-			left: -600px;
+			left: -1200px;
 		}
 	}
 
-.fade-in-left.left {
+	.fade-in-left.left {
 		-webkit-animation: fadeInLeft 1s;
 		        animation: fadeInLeft 1s;
 		left: 0;
 	}
 
-.fade-out-left.left {
+	.fade-out-left.left {
 		-webkit-animation: fadeOutLeft 1s;
 		        animation: fadeOutLeft 1s;
-		left: -600px;
+		left: -1200px;
 	}
+}
 
 .image-header-mobile-overlay {
 	background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(white)) no-repeat;
