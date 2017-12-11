@@ -280,7 +280,6 @@
 	.diagram-step-info {
 		background: #102990;
 		text-align: left;
-		max-width:;
 	}
 
 	.diagram-step-info.left {
@@ -393,6 +392,32 @@
 		-webkit-animation: fadeOutLeft 1s;
 		        animation: fadeOutLeft 1s;
 		left: -1200px;
+	}
+
+
+	@media (orientation: landscape) {
+		.ccos-diagram-mobile .row {
+			height: 200px;
+		}
+
+		.diagram-step {
+			height: 200px;
+		}
+
+		.diagram-step-icon {
+			width: 100px;
+			height: 100px;
+		}
+
+		.small-solid-arrow {
+			width: 40px;
+		}
+
+		.large-solid-arrow {
+			width: 31px;
+			bottom: -110%;
+			left: 44%;
+		}
 	}
 }
 
