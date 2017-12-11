@@ -6,7 +6,7 @@
 	display: none;
 }
 
-@media (min-width: 426px) {
+@media (min-width: 426px) and (min-height: 568px) {
 	.ccos-diagram {
 		display: block;
 	}
@@ -38,7 +38,7 @@
 	color: white;
 }
 
-.step img {
+.ccos-diagram .ccos-diagram-icon {
 	width: 100%;
 	margin-top: auto;
 	margin-bottom: auto;
@@ -71,22 +71,91 @@
 
 .diagonal-right {
 	position: absolute;
-	top: 0;
-	left: -50%;
+	top: -45%;
+	left: -45%;
+	width: 40px;
 	-webkit-transform: rotate(-45deg);
 	        transform: rotate(-45deg);
 	-webkit-transform-origin: 0% 0%;
 	        transform-origin: 0% 0%;
 }
 
+.diagonal-right.secondary {
+	top: -30%;
+}
+
 .diagonal-left {
 	position: absolute;
-	bottom: -15%;
-	left: 0;
+	bottom: -55%;
+	left: 33%;
+	width: 45px;
 	-webkit-transform: rotate(60deg);
 	        transform: rotate(60deg);
 	-webkit-transform-origin: 0% 0%;
 	        transform-origin: 0% 0%;
+}
+
+@media (min-width: 459px) {
+	.diagonal-left {
+		bottom: -85%;
+	}
+	.diagonal-right.secondary {
+		top: -20%;
+	}
+}
+
+@media (min-width: 500px) {
+	.diagonal-right {
+		top: -10%;
+	}
+
+	.diagonal-right.secondary {
+		top: -10%;
+	}
+}
+
+@media (min-width: 570px) {
+	.diagonal-right {
+		left: -35%;
+	}
+
+	.diagonal-right.secondary {
+		left: -35%;
+	}
+}
+
+@media (min-width: 768px) {
+	.diagonal-left {
+		bottom: -45%;
+	}
+}
+
+@media (min-width: 993px) {
+	.diagonal-left {
+		width: 65px;
+	}
+
+	.diagonal-right {
+		width: 65px;
+	}
+
+	.diagonal-right.secondary {
+		width: 65px;
+	}
+}
+
+@media (min-width: 1440px) {
+	.diagonal-left {
+		width: 75px;
+	}
+
+	.diagonal-right {
+		width: 75px;
+	}
+
+	.diagonal-right.secondary {
+		width: 75px;
+	}
 }
 
 .fade-in-top {
@@ -113,59 +182,58 @@
 	left: -200px;
 }
 
-@media(max-width: 425px) {
-	.ccos-diagram-mobile {
+.ccos-diagram-mobile {
 		background: #0C2072;
 		color: #fff;
 		text-align: center;
 		padding: 0;
 	}
 
-	.ccos-diagram-mobile h1 {
+.ccos-diagram-mobile h1 {
 		font-size: 1.4em;
 		padding: 1em 0 0 0;
 	}
 
-	.ccos-diagram-mobile h2 {
+.ccos-diagram-mobile h2 {
 		font-weight: 600;
 		color: #DBB512;
 		font-size: 1.2em;
 		margin: 0;
 	}
 
-	.ccos-diagram-mobile .row {
+.ccos-diagram-mobile .row {
 		height: 260px;
 	}
 
-	.ccos-diagram-mobile .row div {
+.ccos-diagram-mobile .row div {
 		padding: 1em;
 	}
 
-	.diagram-step {
+.diagram-step {
 		cursor: pointer;
 		height: 260px;
 		padding: 0;
 	}
 
-	.diagram-step-icon {
+.diagram-step-icon {
 		width: 130px;
 		height: 130px;
 	}
 
-	.swipe-arrow {
+.swipe-arrow {
 		width: 20px;
 	}
 
-	.swipe-arrow.reverse {
+.swipe-arrow.reverse {
 		-webkit-transform: rotate(180deg);
 		        transform: rotate(180deg);
 	}
 
-	.small-solid-arrow {
+.small-solid-arrow {
 		width: 50px;
 	}
 
-	.large-solid-arrow {
+.large-solid-arrow {
 		width: 35px;
 		position: absolute;
 		bottom: -110%;
@@ -173,7 +241,7 @@
 		pointer-events: none;
 	}
 
-	.diagonal-left-arrow {
+.diagonal-left-arrow {
 		width: 100px;
 		position: absolute;
 		top: 70%;
@@ -182,7 +250,7 @@
 		        transform: rotate(-10deg);
 	}
 
-	.diagonal-right-arrow {
+.diagonal-right-arrow {
 		width: 100px;
 		position: absolute;
 		top: 135%;
@@ -191,7 +259,7 @@
 		        transform: rotate(10deg);
 	}
 
-	@media(min-width: 375px) {
+@media(min-width: 375px) {
 		.diagonal-left-arrow {
 			width: 120px;
 			top: 65%;
@@ -202,34 +270,34 @@
 		}
 	}
 
-	@media (min-width: 425px) {
+@media (min-width: 425px) {
 		.diagonal-right-arrow {
 			top: 110%;
 		}
 	}
 
-	.diagram-step-info {
+.diagram-step-info {
 		background: #102990;
 		text-align: left;
 	}
 
-	.diagram-step-info.left {
+.diagram-step-info.left {
 		left: -600px;
 		position: absolute;
 		-webkit-box-shadow: 0 0 2px 2px rgba(0, 0, 0, .15);
 		        box-shadow: 0 0 2px 2px rgba(0, 0, 0, .15);
-		z-index: 30;
+		z-index: 1;
 	}
 
-	.diagram-step-info.right {
+.diagram-step-info.right {
 		left: 600px;
 		position: absolute;
 		-webkit-box-shadow: 0 0 2px 2px rgba(0, 0, 0, .15);
 		        box-shadow: 0 0 2px 2px rgba(0, 0, 0, .15);
-		z-index: 30;
+		z-index: 1;
 	}
 
-	@-webkit-keyframes fadeInRight {
+@-webkit-keyframes fadeInRight {
 		0% {
 			left: 600px;
 		}
@@ -238,7 +306,7 @@
 		}
 	}
 
-	@keyframes fadeInRight {
+@keyframes fadeInRight {
 		0% {
 			left: 600px;
 		}
@@ -247,7 +315,7 @@
 		}
 	}
 
-	@-webkit-keyframes fadeOutRight {
+@-webkit-keyframes fadeOutRight {
 		0% {
 			left: 0;
 		}
@@ -256,7 +324,7 @@
 		}
 	}
 
-	@keyframes fadeOutRight {
+@keyframes fadeOutRight {
 		0% {
 			left: 0;
 		}
@@ -265,19 +333,19 @@
 		}
 	}
 
-	.fade-in-right.right {
+.fade-in-right.right {
 		-webkit-animation: fadeInRight 1s;
 		        animation: fadeInRight 1s;
 		left: 0;
 	}
 
-	.fade-out-right.right {
+.fade-out-right.right {
 		-webkit-animation: fadeOutRight 1s;
 		        animation: fadeOutRight 1s;
 		left: 600px;
 	}
 
-	@-webkit-keyframes fadeOutLeft {
+@-webkit-keyframes fadeOutLeft {
 		0% {
 			left: 0px;
 		}
@@ -286,7 +354,7 @@
 		}
 	}
 
-	@keyframes fadeOutLeft {
+@keyframes fadeOutLeft {
 		0% {
 			left: 0px;
 		}
@@ -295,22 +363,21 @@
 		}
 	}
 
-	.fade-in-left.left {
+.fade-in-left.left {
 		-webkit-animation: fadeInLeft 1s;
 		        animation: fadeInLeft 1s;
 		left: 0;
 	}
 
-	.fade-out-left.left {
+.fade-out-left.left {
 		-webkit-animation: fadeOutLeft 1s;
 		        animation: fadeOutLeft 1s;
 		left: -600px;
 	}
-}
 
 .image-header-mobile-overlay {
-	background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(white)) no-repeat;
-	background: linear-gradient(transparent, white) no-repeat;
+	background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(white)) no-repeat;
+	background: linear-gradient(rgba(0, 0, 0, 0), white) no-repeat;
 	width: 100%;
 	height: 100%;
 }
