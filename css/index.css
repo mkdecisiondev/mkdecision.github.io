@@ -152,6 +152,7 @@
 	height: 30px;
 	margin: 1em 0;
 }.overlay {
+	cursor: pointer;
     position: fixed;
     top: 0;
     left: 0;

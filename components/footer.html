@@ -1,12 +1,63 @@
-<footer role="contentinfo">
+<footer role="contentinfo"><!-- <div class="container footer-social-media">
+		<div class="row">
+			<div class="col-md-3 text-center text-md-left">
+				<a href="/"><img class="company-brand" src="{{ brandBlackUrl }}" alt="MK brand"></a>
+			</div>
+			<div class="col-md-9 text-center text-md-right">
+				<ul class="list-inline social-buttons">
+					<li class="list-inline-item">{{ lang.followUs }}:</li>
+					<li class="list-inline-item">
+						<a href="https://www.facebook.com/mkdecision/" target="_blank">
+							<img src="img/social-media-icons/facebook.svg">
+						</a>
+					</li>
+					<li class="list-inline-item">
+						<a href="https://www.instagram.com/mkdecision/" target="_blank">
+							<img src="img/social-media-icons/instagram.svg">
+						</a>
+					</li>
+					<li class="list-inline-item">
+						<a href="https://www.linkedin.com/company/mk-decisioning-systems" target="_blank">
+							<img src="img/social-media-icons/linkedin.svg">
+						</a>
+					</li>
+					<li class="list-inline-item">
+						<a href="https://www.glassdoor.com/Overview/Working-at-MK-Decision-EI_IE1864890.11,22.htm" target="_blank">
+							<img src="img/social-media-icons/glassdoor.svg">
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<hr>
+	</div>
+	<div class="container footer-copyrights">
+		<div class="row">
+			<div class="col-md-4 text-center text-md-left">
+				<p>© {{ copyrightYear + ' ' + companyName }}</p>
+			</div>
+			<div class="col-md-8 text-center text-md-right">
+				<ul class="list-inline">
+					<li class="list-inline-item">
+						<a href="/">{{ lang.about + ' ' + companyInitials }}</a>
+					</li>
+					<each loop="link, index of siteLinks">
+						<li class="list-inline-item">
+							<a href="{{ link.url }}">{{ link.title }}</a>
+						</li>
+					</each>
+				</ul>
+			</div>
+		</div>
+	</div> -->
   <div class="container footer-social-media">
     <div class="row">
-      <div class="col-md-3 text-center text-md-left">
+      <div class="col-md-5 text-center text-md-right">
         <a href="/">
           <img class="company-brand" src="/img/logos/brand-black.png" alt="MK brand">
         </a>
       </div>
-      <div class="col-md-9 text-center text-md-right">
+      <div class="col-md-7 text-center text-md-left">
         <ul class="list-inline social-buttons">
           <li class="list-inline-item">Follow Us:</li>
           <li class="list-inline-item">
@@ -36,30 +87,8 @@
   </div>
   <div class="container footer-copyrights">
     <div class="row">
-      <div class="col-md-4 text-center text-md-left">
+      <div class="col-md-12 text-center">
         <p>© 2017 MK Decision</p>
-      </div>
-      <div class="col-md-8 text-center text-md-right">
-        <ul class="list-inline">
-          <li class="list-inline-item">
-            <a href="/">About MK</a>
-          </li>
-          <li class="list-inline-item">
-            <a href="#">Careers</a>
-          </li>
-          <li class="list-inline-item">
-            <a href="#">Privacy</a>
-          </li>
-          <li class="list-inline-item">
-            <a href="#">Security</a>
-          </li>
-          <li class="list-inline-item">
-            <a href="#">Site map</a>
-          </li>
-          <li class="list-inline-item">
-            <a href="#">Terms of use</a>
-          </li>
-        </ul>
       </div>
     </div>
   </div>

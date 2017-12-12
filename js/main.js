@@ -12926,7 +12926,7 @@ function initSideNavigator(node, leftToggleButton, rightToggleButton) {
 	rightToggleButton.addEventListener('click', toggleSideNavigator);
 	closeButton.addEventListener('click', toggleSideNavigator);
 
-	document.addEventListener('click', function (event) {
+	overlay.addEventListener('click', function (event) {
 		if (sidenavIsOpen && !node.contains(event.target)) {
 			toggleSideNavigator(true);
 		}
