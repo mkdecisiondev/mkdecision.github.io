@@ -214,6 +214,11 @@
 		cursor: pointer;
 		height: 260px;
 		padding: 0;
+		position: relative;
+	}
+
+	.diagram-step.overflow {
+		overflow-x: hidden;
 	}
 
 	.diagram-step-icon {
