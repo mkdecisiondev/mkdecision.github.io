@@ -447,16 +447,20 @@
 	}
 }.product-description {
 	padding: 0;
+	text-align: center;
 }@media (min-width: 768px) {
 	.product-description {
 		padding-left: 2.5em;
+		text-align: left;
 	}
 }.product-section h1 {
 	font-size: 1.6em;
 	margin-bottom: 0.5em;
+	text-align: left;
 }.product-section h2 {
 	font-size: 1.3em;
 	margin-bottom: 0.5em;
+	text-align: left;
 }@media (min-width: 768px) {
 	.product-section h1 {
 		font-size: 1.8em;
@@ -477,10 +481,13 @@
 	.product-section h2 {
 		font-size: 1.6em;
 	}
+}.product-section p {
+	text-align: left;
 }.product-section ul {
 	list-style: none;
 	padding: 0;
 	margin-bottom: 0.5em;
+	text-align: left;
 }.product-section ul li {
 	margin-bottom: 0.5em;
 }
