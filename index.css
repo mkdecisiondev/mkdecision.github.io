@@ -96,6 +96,7 @@ h1 {
 .our-partners img:hover {
 	-webkit-filter: grayscale(0%);
 	        filter: grayscale(0%);
+
 }
 
 .solutions-section {

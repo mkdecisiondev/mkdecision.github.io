@@ -16,7 +16,7 @@
           </div>
           <div class="col-6 col-md-8 text-center">
             <a href="/">
-              <img class="company-brand" src="/img/logos/brand-black.png" alt="MK brand">
+              <img class="company-brand" src="/img/logos/logo-black.svg" alt="MK brand">
             </a>
           </div>
           <div class="col-3 col-md-2 text-right hamburger">
@@ -621,7 +621,7 @@
         <div class="row">
           <div class="col-md-5 text-center text-md-right">
             <a href="/">
-              <img class="company-brand" src="/img/logos/brand-black.png" alt="MK brand">
+              <img class="company-brand" src="/img/logos/logo-black.svg" alt="MK brand">
             </a>
           </div>
           <div class="col-md-7 text-center text-md-left">
@@ -662,6 +662,26 @@
     </footer>
     <script>
 			window.pageId = 'ccos';
+			var stepNode = document.querySelectorAll('.step');
+			var stepTextNode = document.querySelectorAll('.step-text');
+
+			window.addEventListener('scroll', function () {
+				for (var i = 0; i < stepNode.length; i++) {
+
+					if (document.documentElement.scrollTop + window.innerHeight - 300 > stepNode[i].offsetTop) {
+						stepNode[i].classList.add('fade-in-top');
+						stepNode[i].classList.remove('fade-out-top');
+						stepTextNode[i].classList.add('fade-in-left');
+						stepTextNode[i].classList.remove('fade-out-left');
+					}
+					else {
+						stepNode[i].classList.add('fade-out-top');
+						stepNode[i].classList.remove('fade-in-top');
+						stepTextNode[i].classList.add('fade-out-left');
+						stepTextNode[i].classList.remove('fade-in-left');
+					}
+				}
+			});
 		</script>
     <script>
 			var diagramStep = document.querySelectorAll('.diagram-step');
