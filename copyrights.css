@@ -1,0 +1,33 @@
+.cip-section {
+	padding: 4em 1em;
+	max-width: 1000px;
+}
+
+.cip-section h1 {
+	text-align: center;
+}
+
+.cip-section h2 {
+	text-align: center;
+	color: #4057A9;
+	font-size: 1.4em;
+	font-weight: 700;
+	line-height: 2em;
+	margin: 1.8em 0;
+}
+
+.cip-section h3 {
+	color: #4057A9;
+	font-size: 1.1em;
+	line-height: 2em;
+	margin: 1.5em 0 0 0;
+}
+
+.cip-section li {
+	margin-left: 2em;
+}
+
+.no-bullets {
+	list-style: none;
+	padding: 0;
+}

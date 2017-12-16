@@ -3,7 +3,6 @@
 }
 
 .image-header-mobile-overlay {
-	background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), to(white)) no-repeat;
 	background: linear-gradient(rgba(255, 255, 255, 0), white) no-repeat;
 	width: 100%;
 	height: 100%;
@@ -82,8 +81,7 @@ h1 {
 .our-partners img {
 	width: 130px;
 	height: 130px;
-	-webkit-filter: grayscale(100%);
-	        filter: grayscale(100%);
+	filter: grayscale(100%);
 }
 
 @media (min-width: 768px) {
@@ -94,8 +92,7 @@ h1 {
 }
 
 .our-partners img:hover {
-	-webkit-filter: grayscale(0%);
-	        filter: grayscale(0%);
+	filter: grayscale(0%);
 
 }
 
@@ -136,9 +133,7 @@ h1 {
 
 .animation-overlay {
 	background: #4057A9;
-    -webkit-transform: scale(1, 1);
-            transform: scale(1, 1);
-    -webkit-transition: all 0.3s ease;
+    transform: scale(1, 1);
     transition: all 0.3s ease;
 }
 
@@ -202,8 +197,7 @@ h1 {
 	background: white;
 	border-radius: 5px;
 	border: 1px solid #7686C0;
-	-webkit-box-shadow: 0 0 15px -1px #4057A9;
-	        box-shadow: 0 0 15px -1px #4057A9;
+	box-shadow: 0 0 15px -1px #4057A9;
 	height: 100%;
 	text-align: left;
 	padding: 1em;
