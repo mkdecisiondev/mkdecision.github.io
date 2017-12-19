@@ -81,7 +81,19 @@ h1 {
 .our-partners img {
 	width: 130px;
 	height: 130px;
-	filter: grayscale(100%);
+}
+
+.partner-grey {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+}
+
+.partner-grey:hover {
+	opacity: 0;
 }
 
 @media (min-width: 768px) {
@@ -89,11 +101,6 @@ h1 {
 		width: 160px;
 		height: 160px;
 	}
-}
-
-.our-partners img:hover {
-	filter: grayscale(0%);
-
 }
 
 .solutions-section {
@@ -221,5 +228,6 @@ h1 {
 
 .modal-content iframe {
 	height: 100%;
+	width: 100%;
 	border: 0;
 }
