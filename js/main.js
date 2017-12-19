@@ -79,13 +79,15 @@ module.exports = __webpack_require__(205);
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__views_index_js__ = __webpack_require__(206);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__views_ccos_js__ = __webpack_require__(207);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__views_components_sidenav_js__ = __webpack_require__(208);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__views_components_ccosDiagram_js__ = __webpack_require__(207);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__views_components_ccosDiagramMobile_js__ = __webpack_require__(208);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__views_components_sidenav_js__ = __webpack_require__(209);
 
 
 
 
-Object(__WEBPACK_IMPORTED_MODULE_2__views_components_sidenav_js__["a" /* default */])(document.getElementById('sidenavMenu'), document.getElementById('leftSidenavToggle'), document.getElementById('rightSidenavToggle'));
+
+Object(__WEBPACK_IMPORTED_MODULE_3__views_components_sidenav_js__["a" /* default */])(document.getElementById('sidenavMenu'), document.getElementById('leftSidenavToggle'), document.getElementById('rightSidenavToggle'));
 
 if (window.pageId === 'index') {
 	Object(__WEBPACK_IMPORTED_MODULE_0__views_index_js__["a" /* default */])({
@@ -97,7 +99,9 @@ if (window.pageId === 'index') {
 }
 
 if (window.pageId === 'ccos') {
-	Object(__WEBPACK_IMPORTED_MODULE_1__views_ccos_js__["a" /* default */])(document.querySelectorAll('.step'), document.querySelectorAll('.step-text'));
+	Object(__WEBPACK_IMPORTED_MODULE_1__views_components_ccosDiagram_js__["a" /* default */])(document.querySelectorAll('.step'), document.querySelectorAll('.step-info'));
+
+	Object(__WEBPACK_IMPORTED_MODULE_2__views_components_ccosDiagramMobile_js__["a" /* default */])(document.querySelectorAll('.step-mobile'), document.querySelectorAll('.step-info-mobile'));
 }
 
 /***/ }),
@@ -138,29 +142,59 @@ function showRsiModal() {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-function initCcos(stepNode, stepTextNode) {
+function initDiagram(stepNode, stepInfoNode) {
 	window.addEventListener('scroll', function () {
 		for (var i = 0; i < stepNode.length; i++) {
-			if (window.scrollY + window.innerHeight - 300 > stepNode[i].offsetTop) {
+			if (window.pageYOffset + window.innerHeight - 300 > stepNode[i].offsetTop) {
 				stepNode[i].classList.add('fade-in-top');
 				stepNode[i].classList.remove('fade-out-top');
-				stepTextNode[i].classList.add('fade-in-left');
-				stepTextNode[i].classList.remove('fade-out-left');
+				stepInfoNode[i].classList.add('fade-in-left');
+				stepInfoNode[i].classList.remove('fade-out-left');
 			} else {
 				stepNode[i].classList.add('fade-out-top');
 				stepNode[i].classList.remove('fade-in-top');
-				stepTextNode[i].classList.add('fade-out-left');
-				stepTextNode[i].classList.remove('fade-in-left');
+				stepInfoNode[i].classList.add('fade-out-left');
+				stepInfoNode[i].classList.remove('fade-in-left');
 			}
 		}
 	});
 }
 
-/* harmony default export */ __webpack_exports__["a"] = (initCcos);
+/* harmony default export */ __webpack_exports__["a"] = (initDiagram);
 
 /***/ }),
 
 /***/ 208:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+function initDiagramMobile(stepMobileNode, stepInfoMobileNode) {
+	for (var i = 0; i < stepMobileNode.length; i++) {
+		stepMobileNode[i].setAttribute('index', i);
+
+		stepMobileNode[i].addEventListener('click', function () {
+			var currentIndex = this.getAttribute('index');
+
+			if (stepInfoMobileNode[currentIndex].classList.contains('right')) {
+				if (stepInfoMobileNode[currentIndex].classList.contains('fade-in-right')) {
+					stepInfoMobileNode[currentIndex].classList.remove('fade-in-right');
+				} else {
+					stepInfoMobileNode[currentIndex].classList.add('fade-in-right');
+				}
+			} else if (stepInfoMobileNode[currentIndex].classList.contains('fade-in-left')) {
+				stepInfoMobileNode[currentIndex].classList.remove('fade-in-left');
+			} else {
+				stepInfoMobileNode[currentIndex].classList.add('fade-in-left');
+			}
+		});
+	}
+}
+
+/* harmony default export */ __webpack_exports__["a"] = (initDiagramMobile);
+
+/***/ }),
+
+/***/ 209:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";

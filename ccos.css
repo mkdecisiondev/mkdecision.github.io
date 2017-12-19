@@ -44,7 +44,7 @@
 	margin-bottom: auto;
 }
 
-.step-text {
+.step-info {
 	left: -200px;
 	position: relative;
 	margin-top: auto;
@@ -204,7 +204,7 @@
 		padding: 1em;
 	}
 
-	.diagram-step {
+	.step-mobile {
 		cursor: pointer;
 		height: 260px;
 		padding: 0;
@@ -270,19 +270,19 @@
 		}
 	}
 
-	.diagram-step-info {
+	.step-info-mobile {
 		background: #102990;
 		text-align: left;
 		z-index: 2;
 	}
 
-	.diagram-step-info.left {
+	.step-info-mobile.left {
 		position: absolute;
 		box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.15);
 		transition-duration: 600ms;
 	}
 
-	.diagram-step-info.right {
+	.step-info-mobile.right {
 		position: absolute;
 		box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.15);
 		transition-duration: 600ms;
@@ -357,7 +357,7 @@
 			height: 200px;
 		}
 
-		.diagram-step {
+		.step-mobile {
 			height: 200px;
 		}
 
